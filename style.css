@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.container{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gg-menu-left{
+    font-size: 10px;
+    color:orangered;
+    cursor: pointer;
+}
+
+.gg-shopping-cart{
+    font-size: 10px;
+    color:orangered;
+    cursor: pointer;
+}
+
+.main_text{
+    margin-top: 40px;
+    width: 270px;
+}
+.food_menu_container{
+    margin-top: 40px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.food_card_container{
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    height:190px;
+    width:150px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.food_image_container{
+    height:120px;
+    width:120px;
+
+}
+
+.food_image{
+    width:100%;
+    height:100%;
+    border-radius: 60px;
+}
+.para_text{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:#ACACAC;
+}
+.hori_line{
+    border-top: 4px solid orangered;
+    width:130px;
+    margin-top: 20px;
+}
+.aside_container{
+    display: none;
+}
+.pc_flex_only{
+    display: none;
+}
+
+@media (min-width:1020px){
+    .container{
+        margin-left:40px;
+    }
+    .aside_container{
+        position: absolute;
+    }
+    .navbar{
+        display: none;
+    }
+    .para_text{
+        display: none;
+    }
+    .aside_container{
+        display: block;
+    }
+    .list_item{
+        cursor: pointer;
+        color:#878787 ;
+        list-style-type: none;
+        margin-top: 40px;
+    }
+    .cart_button{
+        margin-top: 60px;
+        cursor: pointer;
+        color: white;
+        padding-top:14px;
+        padding-bottom: 14px;
+        padding-left:40px;
+        padding-right: 40px;
+        background-color: orangered;
+        border-radius: 20px;
+        border: none;
+    }
+    .pc_flex_only{
+        font-size: 15px;
+        width: 380px;
+        display: inline;
+        color:#878787 ;
+
+    }
+    .main_text
+    {
+        font-size: 25px;
+        display: flex;
+        width:700px;
+        gap:30px;
+    }
+    .static_content{
+        width:900px;
+        position: relative;
+        top:40px;
+        right:-200px;
+    }
+    
+}
